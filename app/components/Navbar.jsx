@@ -14,6 +14,9 @@ const Navbar = () => {
         <div>
           <ul className="flex justify-between gap-5">
             <li>
+              <Link href="/presupuesto">Presupuesto</Link>
+            </li>
+            <li>
               <Link href="/productos">Productos</Link>
             </li>
             <li>

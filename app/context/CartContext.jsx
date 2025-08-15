@@ -17,7 +17,7 @@ export const CartProvider = ({ children }) => {
 
   const fetchCart = async () => {
     try {
-      const res = await fetch("http://localhost:3000/api/cart");
+      const res = await fetch("/api/cart");
       const data = await res.json();
       if (data.success) {
         dispatch({ type: SET_CART, payload: data.cart });
