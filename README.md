@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🛒 Prueba-tecnica, carrito de compras con Next.js 15
 
-## Getting Started
+Una aplicación de comercio electrónico basica construida con Next.js 15, que incluye visualización de productos y carrito de compras con una API REST integrada.
 
-First, run the development server:
+## 🚀 Características
+
+### Frontend
+
+- ✅ **Lista de productos**
+- ✅ **Carrito de compras** interactivo
+- ✅ **Gestión de cantidades** (agregar/quitar)
+- ✅ **Diseño responsive** con Tailwind CSS
+- ✅ **Contador de productos** en navegación
+
+### Backend API
+
+- 🔌 **API REST completa** con Next.js App Router
+- 📦 **Gestión de productos** (CRUD completo)
+- ⚡ **Validación de datos** y manejo de errores
+- 📊 **Cálculos automáticos** de totales y cantidades
+
+## 🛠️ Instalación y Configuración
+
+### Prerrequisitos
+
+- Node.js 18+
+- bun o npm
+
+### Pasos de instalación
+
+1. **Clonar el repositorio**
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/Dfcuevas/prueba-tecnica-12-ago-25.git
+cd prueba-tecnica-12-ago-25
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Instalar dependencias**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+bun install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. **Iniciar el servidor de desarrollo**
 
-## Learn More
+```bash
+bun run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. **Abrir en el navegador**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+http://localhost:3000
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📡 API Endpoints
 
-## Deploy on Vercel
+### Productos
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Método | Endpoint        | Descripción                 |
+| ------ | --------------- | --------------------------- |
+| `GET`  | `/api/products` | Obtener todos los productos |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Carrito
+
+| Método   | Endpoint           | Descripción                  |
+| -------- | ------------------ | ---------------------------- |
+| `GET`    | `/api/cart`        | Obtener carrito actual       |
+| `POST`   | `/api/cart/add`    | Agregar producto al carrito  |
+| `DELETE` | `/api/cart/remove` | Remover producto del carrito |
+
+## 🎯 Funcionalidades Principales
+
+### Gestión de Productos
+
+- **Listado dinámico** de productos
+
+### Carrito de Compras
+
+- **Agregar productos**
+- **Modificar cantidades**
+- **Remover items**
+- **Cálculo automático** de totales
+- **Contador visual** en la navegación
+
+## 📦 Dependencias Principales
+
+| Dependencia    | Versión | Propósito        |
+| -------------- | ------- | ---------------- |
+| `next`         | 15.4.6  | Framework React  |
+| `react`        | 19.1.0  | Biblioteca de UI |
+| `tailwindcss`  | 4       | Framework CSS    |
+| `lucide-react` | 0.539.0 | Iconos           |
+
+## 👨‍💻 Autor
+
+**Diego Cuevas Amaya**
+
+- GitHub: [@Dfcuevas](https://github.com/Dfcuevas)
+- LinkedIn: [https://www.linkedin.com/in/diego-fernando-cuevas-frontend-developer/](https://linkedin.com/in/diego-fernando-cuevas-frontend-developer/)
